@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #663344;
+}
+
+h1 {
+    color: #d94f87;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 10px;
+    border: 2px solid #f5b8d0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+body > div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px #e9b7c633;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    accent-color: #e76b9a;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gerar {
+    background-color: #e76b9a;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#gerar:hover {
+    background-color: #d94f87;
+    transform: scale(1.03);
+}
+
+#resultado {
+    background-color: #ffffff;
+    color: #b83e70;
+    border: 2px dashed #f2a9c5;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 220px;
+    min-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    margin: 5px 0 15px;
+}
+
+#copiar {
+    background-color: #ffdf70;
+    color: #66451b;
+}
+
+#copiar:hover {
+    background-color: #ffd34d;
+    transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    body {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    body > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #resultado {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
